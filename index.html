@@ -1,0 +1,301 @@
+<style>
+    :root {
+        --killdeer-size: 500px;
+        --killdeer-skin: BurlyWood;
+        --killdeer-belly: Ivory;
+        --killdeer-beak: dimgray;
+        --killdeer-leg: DarkSalmon;
+    }
+
+    .killdeer {
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: var(--killdeer-size, 300px);
+        height: var(--killdeer-size, 300px);
+    }
+
+    .eye-band-black {
+        top: 40%;
+        left: 15%;
+        /* background: black; */
+        width: 70%;
+        height: 30%;
+        border-radius: 120% 120% 120% 120%;
+    }
+
+    .eye-band-white {
+        top: -5%;
+        left: 0%;
+        /* background: var(--killdeer-belly); */
+        width: 100%;
+        height: 80%;
+        border-radius: 110% 110% 110% 110%;
+    }
+
+    .forehead {
+        top: 20%;
+        left: 25%;
+        background: tan;
+        width: 50%;
+        height: 30%;
+        border-radius: 70% 70% 60% 60%;
+    }
+
+    .beak-band {
+        top: 47%;
+        left: 15%;
+        background: black;
+        width: 70%;
+        height: 30%;
+        border-radius: 90% 90% 60% 60%;
+    }
+
+    .beak-band-white {
+        top: 25%;
+        left: -1%;
+        background: white;
+        width: 102%;
+        height: 95%;
+        border-radius: 50% 50% 90% 90%;
+    }
+
+    .band-black {
+        top: -35%;
+        left: 10%;
+        background: black;
+        width: 80%;
+        height: 80%;
+        border-radius: 120% 120% 110% 110%;
+    }
+
+    .band-white {
+        top: -5%;
+        left: 1%;
+        background: white;
+        width: 98%;
+        height: 96%;
+        border-radius: 100% 100% 100% 100%;
+    }
+
+    .belly-band-black {
+        top: 5%;
+        left: 5%;
+        background: black;
+        width: 90%;
+        height: 70%;
+        border-radius: 100% 100% 100% 100%;
+    }
+
+    .belly-band-white {
+        top: 6%;
+        left: 0%;
+        background: var(--killdeer-belly);
+        width: 100%;
+        height: 70%;
+        border-radius: 100% 100% 110% 110%;
+    }
+
+    .belly {
+        top: 60%;
+        left: 2.5%;
+        background: var(--killdeer-belly, white);
+        width: 95%;
+        height: 100%;
+        border-radius: 120% 120% 100% 100%;
+    }
+
+    .killdeer-top {
+        top: 10%;
+        left: 25%;
+        /* background: var(--killdeer-skin); */
+        width: 50%;
+        height: 45%;
+        border-radius: 5% 5% 0% 0%;
+    }
+
+    .killdeer-head {
+        top: 19%;
+        left: 29%;
+        background: var(--killdeer-skin);
+        width: 42%;
+        height: 40%;
+        border-radius: 50% 50% 0% 0%;
+    }
+
+    .killdeer-bottom {
+        top: 40%;
+        left: 25%;
+        background: var(--killdeer-skin, gray);
+        width: 50%;
+        height: 43%;
+        border-radius: 70% 70% 100% 100%;
+    }
+
+    .right-hand {
+        top: 5%;
+        left: 25%;
+        background: var(--killdeer-skin, black);
+        width: 30%;
+        height: 80%;
+        border-radius: 0% 0% 200% 15%;
+        transform: rotate(130deg);
+        z-index: -1;
+        animation-duration: 1s;
+        animation-name: wave;
+        animation-iteration-count: infinite;
+        transform-origin: 0% 0%;
+        animation-timing-function: linear;
+    }
+
+    @keyframes wave {
+        10% {
+            transform: rotate(110deg);
+        }
+
+        20% {
+            transform: rotate(130deg);
+        }
+
+        30% {
+            transform: rotate(110deg);
+        }
+
+        40% {
+            transform: rotate(130deg);
+        }
+    }
+
+    .left-hand {
+        top: 0%;
+        left: 85%;
+        background: var(--killdeer-skin, gray);
+        width: 30%;
+        height: 90%;
+        border-radius: 0% 0% 15% 200%;
+        transform: rotate(-50deg);
+        z-index: -1;
+    }
+
+    .right-thigh {
+        top: 85%;
+        left: 60%;
+        background: linen;
+        width: 5%;
+        height: 35%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-10deg);
+        z-index: -1;
+    }
+
+    .left-thigh {
+        top: 85%;
+        left: 35%;
+        background: linen;
+        width: 5%;
+        height: 35%;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(10deg);
+        z-index: -1;
+    }
+
+    .right-eye {
+        top: 45%;
+        left: 60%;
+        background: #C50;
+        width: 15%;
+        height: 17%;
+        border-radius: 50%;
+    }
+
+    .left-eye {
+        top: 45%;
+        left: 25%;
+        background: #C50;
+        width: 15%;
+        height: 17%;
+        border-radius: 50%;
+    }
+
+    .sparkle {
+        top: 20%;
+        left: 20%;
+        background: black;
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+
+    .blush-right {
+        top: 65%;
+        left: 20%;
+        background: pink;
+        width: 12.5%;
+        height: 7.5%;
+        border-radius: 50%;
+    }
+
+    .blush-left {
+        top: 65%;
+        left: 67.5%;
+        background: pink;
+        width: 12.5%;
+        height: 7.5%;
+        border-radius: 50%;
+    }
+
+    .beak-top {
+        top: 60%;
+        left: 40%;
+        background: var(--killdeer-beak, orange);
+        width: 20%;
+        height: 20%;
+        border-radius: 100% 50% 0% 50%;
+        transform: rotate(45deg)
+    }
+
+    body {
+        background: PowderBlue;
+    }
+
+    .killdeer * {
+        position: absolute;
+    }
+</style>
+<div class="killdeer">
+    <div class="killdeer-bottom">
+        <div class="right-hand"></div>
+        <div class="left-hand"></div>
+        <div class="right-thigh"></div>
+        <div class="left-thigh"></div>
+    </div>
+    <div class="killdeer-head"></div>
+    <div class="killdeer-top">
+        <div class="belly">
+            <div class="belly-band-black">
+                <div class="belly-band-white"></div>
+            </div>
+            <div class="band-black">
+                <div class="band-white"></div>
+            </div>
+        </div>
+        <div class="eye-band-black">
+            <div class="eye-band-white"></div>
+        </div>
+        <div class="forehead"></div>
+        <div class="beak-band">
+            <div class="beak-band-white"></div>
+        </div>
+        <div class="right-eye">
+            <div class="sparkle"></div>
+        </div>
+        <div class="left-eye">
+            <div class="sparkle"></div>
+        </div>
+        <div class="blush-right"></div>
+        <div class="blush-left"></div>
+        <div class="beak-top"></div>
+        <!-- <div class="beak-bottom"></div> -->
+    </div>
+</div>
